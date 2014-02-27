@@ -73,8 +73,10 @@
      <Compile Include="Assets\RUIS\Editor\RUISTrackerEditor.cs" />
      <Compile Include="Assets\RUIS\Editor\RUISWandSelectorEditor.cs" />
      <None Include="Assets\RUIS\Resources\RUIS\Models\Other\TubeBuilding\README.txt" />
+     <None Include="Assets\Breakable Glass\Shaders\SimpleGlass.shader" />
      <None Include="Assets\RUIS\Schemas\display.xsd.txt" />
      <None Include="Assets\RUIS\Schemas\calibration.xsd.txt" />
+     <None Include="Assets\Breakable Glass\README.txt" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\RUIS\Schemas\inputManager.xsd.txt" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
