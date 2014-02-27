@@ -66,6 +66,7 @@
      <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
+     <Compile Include="Assets\ObjectScale.cs" />
      <Compile Include="Assets\OpenNI\Scripts\Input\NIAxis.cs" />
      <Compile Include="Assets\OpenNI\Scripts\Input\NIInput.cs" />
      <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\NIEventLogger.cs" />
