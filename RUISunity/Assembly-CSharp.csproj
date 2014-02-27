@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{22788CCE-18E0-9A0A-6292-32CE848A2CBF}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CSML\Complex.cs" />
+     <Compile Include="Assets\CSML\Matrix.cs" />
+     <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
+     <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraStripped.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRComponent.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMagCalibration.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMessenger.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Input\NIAxis.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Input\NIInput.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\NIEventLogger.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NICheckVersion.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIContext.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIConvertCoordinates.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIImage.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIOpenNICheckVersion.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\NIUserAndSkeleton.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\WrapperBaseObjects\NIWrapperContextDependant.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNI engine\WrapperBaseObjects\NIWrapperObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\OpenNISettingsManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\Queries\NIQuery.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\Basic objects\Queries\NIQueryDescription.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NIPlayerCandidateObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NIPlayerManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Main OpenNI\User selector\Base objects\NISelectedPlayer.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Selectors\NIPlayerCOMCandidateObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Selectors\NIPlayerManagerCOMSelection.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Selectors\NIPlayerManagerPoseSelection.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Selectors\NIPlayerPoseCandidateObject.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Skeleton base objects\NISkeletonController.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Base tracker and manager classes\NIPointTracker.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Base tracker and manager classes\NIPointTrackerManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Common gesture classes\NIGestureFactory.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Common gesture classes\NIGestureManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Common gesture classes\NIGestureTracker.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\NIPositionTrackerFrameManager.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Skeleton based trackers\gestures\Gesture detectors\NISteadySkeletonHandDetector.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Skeleton based trackers\gestures\Gesture detectors\NIUserPoseDetector.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Skeleton based trackers\gestures\factories\NISteadySkeletonGestureFactory.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Skeleton based trackers\gestures\factories\NIUserPoseGestureFactory.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Trackers\Skeleton based trackers\point trackers\NISkeletonTracker.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\NISkeletonControllerLineDebugger.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\NISkeletonControllerLineRenderer.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIDepthmapViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIImagemapViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIMapViewerBaseUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIRadarViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\Debug utilities\Viewers\NIUsermapViewerUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\General utilities\NISkeletonCalibrationMessageUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\General utilities\NITimedPointListUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\General utilities\NITimedPointSpeedListUtility.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\NIGUI\DefaultNIGUICursor.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\NIGUI\NICursorInitializer.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\NIGUI\NIGUI.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\Utilities\NIGUI\NIGUICursor.cs" />
+     <Compile Include="Assets\OpenNI\Scripts\audioScripts\AudioFootstepsWhenWalking.cs" />
+     <Compile Include="Assets\PSMoveWrapper\PSEyeImageDisplay.cs" />
+     <Compile Include="Assets\PSMoveWrapper\PSMoveClient.cs" />
+     <Compile Include="Assets\PSMoveWrapper\PSMoveWrapper.cs" />
+     <Compile Include="Assets\RUIS\Examples\BowlingAlley\Scripts\ResetBall.cs" />
+     <Compile Include="Assets\RUIS\Examples\BowlingAlley\Scripts\SpawnBowlingPins.cs" />
+     <Compile Include="Assets\RUIS\Examples\CaveExample\Scripts\ShiftViewpointWithKeyboard.cs" />
+     <Compile Include="Assets\RUIS\Examples\Shared Files\Prefabs\AudioFallingCrate.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISCharacterAnimationController.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISCharacterController.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISCharacterLocomotion.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISCharacterStabilizingCollider.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISHeadTrackerAssigner.cs" />
+     <Compile Include="Assets\RUIS\Scripts\CharacterController\RUISKinectAndMecanimCombiner.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISCamera.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISDisplay.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISDisplayManager.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISKeystoning.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISKeystoningBorderDrawer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Display\RUISKeystoningConfiguration.cs" />
+     <Compile Include="Assets\RUIS\Scripts\GUI\RUISGUI.cs" />
+     <Compile Include="Assets\RUIS\Scripts\GUI\RUISMagCalibration.cs" />
+     <Compile Include="Assets\RUIS\Scripts\GUI\RUISMenu.cs" />
+     <Compile Include="Assets\RUIS\Scripts\GUI\RUISOculusHUD.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\CameraTiltTextUpdater.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISCalibrationDepthMap.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISCalibrationMoveImage.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISCoordinateSystem.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISM2KCalibration.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISM2KCalibrationCamera.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RUISMoveCalibrationVisualizer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Calibration\RotationTestingScript.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Gestures\RUISGestureRecognizer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Gestures\RUISHoldGestureRecognizer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Gestures\RUISJumpGestureRecognizer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Gestures\RUISKinectJointFollower.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\Gestures\RUISPointTracker.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISInputManager.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISKinectDisabler.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISMouseWand.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISPSMoveWand.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISRazerWand.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISSelectable.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISSkeletonController.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISSkeletonManager.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISSkeletonWand.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISTracker.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISWand.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Input\RUISWandSelector.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Interaction\BallSpawner.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Interaction\MoveGun.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Interaction\PlayAudioOnCollision.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Interaction\PlayAudioWhenSelected.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Interaction\ReelInSelection.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\CachedValue.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\DrawLine.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\FixedFollowTransform.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\KalmanFilter.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\KalmanFilteredRotation.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\KalmanFilteredTransform.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\MathUtil.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\RUISUserViewer.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\XMLUtil.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\XmlImportExport.cs" />
+     <Compile Include="Assets\RUIS\Scripts\Util\YawDriftCorrector.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHandController.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseInputTest.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseObjectController.cs" />
+     <Compile Include="Assets\SixenseInput\Scripts\SixenseInput.cs" />
+     <Compile Include="Assets\SixenseInput\Scripts\SixensePlugin.cs" />
+     <None Include="Assets\RUIS\Resources\RUIS\Models\Other\TubeBuilding\README.txt" />
+     <None Include="Assets\RUIS\Schemas\display.xsd.txt" />
+     <None Include="Assets\RUIS\Schemas\calibration.xsd.txt" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+     <None Include="Assets\RUIS\Schemas\inputManager.xsd.txt" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\RUIS\Scripts\Shaders\KeystoneBorderShader.shader" />
+ <Reference Include="Assets\OpenNI\OpenNI.Net">
+ <HintPath>Assets\OpenNI\OpenNI.Net.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F3F0D016-55EB-D286-C3AC-F5F1674B9C25}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{D006D81F-5C17-915C-DAF1-63DCBB99B8CF}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
